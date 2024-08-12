@@ -12,7 +12,7 @@ const MessageForm = () => {
     e.preventDefault();
     try{
        await axios.post(
-        "http://localhost:4000/api/v1/message/send",
+        "https://zeecare-q51d.onrender.com/api/v1/message/send",
         { firstName, lastName, phone, email, message},
         {
           withCredentials: true,

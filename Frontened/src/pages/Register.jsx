@@ -23,7 +23,7 @@ const Register = () => {
     try {
       const response = await axios
         .post(
-          "http://localhost:4000/api/v1/user/patient/register",
+          "https://zeecare-q51d.onrender.com/api/v1/user/patient/register",
           { firstName, lastName, email, phone, nic, dob, gender, password, role:"Patient",},
           {
             withCredentials: true,
